@@ -13,10 +13,10 @@ tdebt="./tdebt_148.exe"
 
 class TDE_Modes(unittest.TestCase):
     
-    #test_SetMacaddressBT
+    #test_SetMacaddressBT-TDETool.exe -c tvhub -s macaddress 111234567899
     def test_SetMacaddressBT(self):
         print("TEST_tdebt_SetMacaddress ")
-        cmdStr=tdebt+" -s macaddress 001122334455"
+        cmdStr=tdebt+" -c tvhub -s macaddress 111234567899"
         r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
         r = r.replace("\r\n", " ")
         r = r.replace(" ", " ")
@@ -28,7 +28,7 @@ class TDE_Modes(unittest.TestCase):
     #test_GetMacaddressBT
     def test_GetMacaddressBT(self):
         print("TEST GetMacaddress")
-        cmdStr=tdebt+" -g macaddress "
+        cmdStr=tdebt+" -c tvhub -g macaddress "
         r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
         print("OUTPUT: "+r+"\r\n")
         self.assertEqual("001122334455",r)
