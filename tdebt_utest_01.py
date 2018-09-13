@@ -31,7 +31,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr=tdebt+" -c tvhub -g macaddress "
         r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
         print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("001122334455",r)
+        self.assertEqual("111234567899",r)
         return
         
 if __name__ == '__main__':
