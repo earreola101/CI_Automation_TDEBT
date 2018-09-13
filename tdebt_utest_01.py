@@ -9,7 +9,7 @@ from time import sleep
 
 #automated TDE mode test version 0.1.0
 
-tdebt="./tdebt_148.exe"
+tdebt="./tdebt.exe"
 
 class TDE_Modes(unittest.TestCase):
     
@@ -21,7 +21,7 @@ class TDE_Modes(unittest.TestCase):
         r = r.replace("\r\n", " ")
         r = r.replace(" ", " ")
         print("OUTPUT: "+r+"\r\n")
-        self.assertEqual(" MacAddress=001122334455[OK]",r)
+        self.assertEqual("[OK]",r)
         return
 
         
