@@ -129,15 +129,7 @@ class TDE_Modes(unittest.TestCase):
         print("OUTPUT: "+r+"\r\n")
         self.assertEqual("0",r)
         return     
-    
-      #test_Getbt_nfcstatus
-    def test_Getbt_nfcstatus(self):
-        print("Start test_Getbt_nfcstatus")
-        cmdStr=tdebt+" -g bt_nfcstatus "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("0",r)
-        return     	
+       	
         
 if __name__ == '__main__':
     with open('results.xml', 'wb') as output:
