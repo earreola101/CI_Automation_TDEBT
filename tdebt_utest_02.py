@@ -134,7 +134,7 @@ class TDE_Modes(unittest.TestCase):
             + ' -c tvhub -s tvhub_ble_central_address 4467e23d4686'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Gettvhub_ble_central_address
@@ -157,7 +157,7 @@ class TDE_Modes(unittest.TestCase):
             + ' -c tvhub -s tvhub_ble_camera_address eedd55e83755'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Gettvhub_ble_camera_address
@@ -180,7 +180,7 @@ class TDE_Modes(unittest.TestCase):
             + ' -c tvhub -c tvhub -s tde_test_tracking_data 11112222333344445555666677778888'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Gettvhub_tde_test_tracking_data
@@ -202,7 +202,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + ' -c tvhub -c tvhub -s pskey 36'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Getpskey
@@ -224,7 +224,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + ' -c tvhub -s tvhub_led 1'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Settvhub_led
@@ -235,7 +235,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + ' -c tvhub -s tvhub_led 1'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Getbtn_status
@@ -257,7 +257,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + ' -c tvhub -s tvhub_spplib_bypass 1'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
     # TEST_Settvhub_spplib_bypass
@@ -268,7 +268,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + ' -c tvhub -s tvhub_spplib_bypass 0'
         r = subprocess.check_output(cmdStr, stderr=subprocess.STDOUT)
         print 'OUTPUT: ' + r + '\r\n'
-        self.assertEqual('0', r)
+        self.assertEqual('[OK]', r)
         return
 
 
