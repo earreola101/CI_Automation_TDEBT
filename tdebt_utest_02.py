@@ -12,7 +12,7 @@ tdebt = "./tdebt.exe"
 
 class TDE_Modes(unittest.TestCase):
 
-    #test_SetMacaddressBT# - tdebt.exe - c tvhub - s macaddress 111234567899
+    #1. test_SetMacaddressBT# - tdebt.exe - c tvhub - s macaddress 111234567899
     def test_SetMacaddressBT(self):
         print("test_SetMacaddressBT ")
         cmdStr = tdebt + " -c tvhub -s macaddress 111234567899"
@@ -23,7 +23,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_GetMacaddressBT# - tdebt.exe - c tvhub - g macaddress
+    #2. test_GetMacaddressBT# - tdebt.exe - c tvhub - g macaddress
     def test_GetMacaddressBT(self):
         print("test_GetMacaddressBT")
         cmdStr = tdebt + " -c tvhub -g macaddress"
@@ -32,7 +32,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("111234567899", r)
         return
 
-        # test_Settvhub_ble_peripheral_address# - tdebt.exe - c tvhub - s tvhub_ble_peripheral_address 4467e23 d4686
+    #3. test_Settvhub_ble_peripheral_address# - tdebt.exe - c tvhub - s tvhub_ble_peripheral_address 4467e23 d4686
     def test_Settvhub_ble_peripheral_address(self):
         print("test_Settvhub_ble_peripheral_address")
         cmdStr = tdebt + " -c tvhub -s tvhub_ble_peripheral_address 4467e23d4686 "
@@ -43,7 +43,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Gettvhub_ble_peripheral_address# - tdebt.exe - c tvhub - g tvhub_ble_peripheral_address
+    #4. test_Gettvhub_ble_peripheral_address# - tdebt.exe - c tvhub - g tvhub_ble_peripheral_address
     def test_Gettvhub_ble_peripheral_address(self):
         print "test_Gettvhub_ble_peripheral_address"
         cmdStr = tdebt + " -c tvhub -g tvhub_ble_peripheral_address "
@@ -52,7 +52,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("111234567899", r)
         return
 
-        # test_Settde_unique_id# - tdebt.exe - c tvhub - s tde_unique_id 1111222233334444
+    #5. test_Settde_unique_id# - tdebt.exe - c tvhub - s tde_unique_id 1111222233334444
     def test_Settde_unique_id(self):
         print "test_Settde_unique_id "
         cmdStr = tdebt + " -c tvhub -s tde_unique_id 1111222233334444 "
@@ -63,7 +63,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_GetTde_unique_id# - tdebt.exe - c tvhub - g tde_unique_id
+    #6. test_GetTde_unique_id# - tdebt.exe - c tvhub - g tde_unique_id
     def test_Gettde_unique_id(self):
         print "test_GetTde_unique_id"
         cmdStr = tdebt + " -c tvhub -g tde_unique_id"
@@ -72,7 +72,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("1111222233334444", r)
         return
 
-        # test_Gettvhub_cec_status# - tdebt.exe - c tvhub - g tvhub_cec_status
+    #7. test_Gettvhub_cec_status# - tdebt.exe - c tvhub - g tvhub_cec_status
     def test_Gettvhub_cec_status(self):
         print "test_Gettvhub_cec_status"
         cmdStr = tdebt + " -c tvhub -g tvhub_cec_status"
@@ -81,7 +81,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Gettvhub_chrontel_status# - tdebt.exe - c tvhub - g tvhub_chrontel_status
+    #8. test_Gettvhub_chrontel_status# - tdebt.exe - c tvhub - g tvhub_chrontel_status
     def test_Gettvhub_chrontel_status(self):
         print "test_Gettvhub_chrontel_status"
         cmdStr = tdebt + " -c tvhub -g tvhub_chrontel_status"
@@ -90,7 +90,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Settvhub_ble_central_address# - tdebt.exe - c tvhub - s tvhub_ble_central_address 4467e23 d4686
+    #9. test_Settvhub_ble_central_address# - tdebt.exe - c tvhub - s tvhub_ble_central_address 4467e23 d4686
     def test_Settvhub_ble_central_address(self):
         print "test_Settvhub_ble_central_address"
         cmdStr = tdebt + " -c tvhub -s tvhub_ble_central_address 4467e23d4686"
@@ -99,7 +99,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Gettvhub_ble_central_address# - tdebt.exe - c tvhub - g tvhub_ble_central_address
+        
+    #10.test_Gettvhub_ble_central_address# - tdebt.exe - c tvhub - g tvhub_ble_central_address
     def test_Gettvhub_ble_central_address(self):
         print "test_Gettvhub_ble_central_address"
         cmdStr = tdebt + " -c tvhub -g tvhub_ble_central_address"
@@ -108,7 +109,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Settvhub_ble_camera_address# - tdebt.exe - c tvhub - s tvhub_ble_camera_address eedd55e83755
+    #11.test_Settvhub_ble_camera_address# - tdebt.exe - c tvhub - s tvhub_ble_camera_address eedd55e83755
     def test_Settvhub_ble_camera_address(self):
         print "test_Settvhub_ble_camera_address"
         cmdStr = tdebt + " -c tvhub -s tvhub_ble_camera_address eedd55e83755"
@@ -117,17 +118,18 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Gettvhub_ble_camera_address# - tdebt.exe - c tvhub - g tvhub_ble_camera_address
-    def TESTGettvhub_ble_camera_address(self):
-        print "TESTGettvhub_ble_camera_address"
+    #12.test_Gettvhub_ble_camera_address# - tdebt.exe - c tvhub - g tvhub_ble_camera_address
+    def test_Gettvhub_ble_camera_address(self):
+        print "test_Gettvhub_ble_camera_address"
         cmdStr = tdebt + " -c tvhub -g tvhub_ble_camera_address"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
         self.assertEqual("0", r)
         return
 
-        # test_Settde_test_tracking_data# - tdebt.exe - c tvhub - s tde_test_tracking_data 11112222333344445555666677778888
-    def TESTSettde_test_tracking_data(self):
+
+    #13.test_Settde_test_tracking_data# - tdebt.exe - c tvhub - s tde_test_tracking_data 11112222333344445555666677778888
+    def test_Settde_test_tracking_data(self):
         print "TESTSettde_test_tracking_data"
         cmdStr = tdebt + " -c tvhub -c tvhub -s tde_test_tracking_data 11112222333344445555666677778888"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -135,7 +137,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Gettvhub_tde_test_tracking_data# - tdebt.exe - c tvhub - g tde_test_tracking_data
+#14.test_Gettvhub_tde_test_tracking_data# - tdebt.exe - c tvhub - g tde_test_tracking_data
     def TESTGettvhub_tde_test_tracking_data(self):
         print "TESTGettvhub_tde_test_tracking_data"
         cmdStr = tdebt + " -c tvhub -g tde_test_tracking_data"
@@ -144,7 +146,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Setpskey# - tdebt.exe - c tvhub - s pskey 36
+    #15.test_Setpskey# - tdebt.exe - c tvhub - s pskey 36
     def TESTSetpskey(self):
         print "TESTSetpskey"
         cmdStr = tdebt + " -c tvhub -c tvhub -s pskey 36"
@@ -153,8 +155,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Getpskey# - tdebt.exe - c tvhub - g pskey
-    def TESTGetpskey(self):
+    #16.test_Getpskey# - tdebt.exe - c tvhub - g pskey
+    def test_Getpskey(self):
         print "TESTGetpskey"
         cmdStr = tdebt + " -c tvhub -g pskey"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -162,8 +164,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 0
-    def TESTSettvhub_led(self):
+    #17.test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 0
+    def test_Settvhub_led(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_led 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -171,8 +173,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 1
-    def TESTSettvhub_led(self):
+    #18.test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 1
+    def test_Settvhub_led(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_led 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -180,8 +182,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Getbtn_status# - tdebt.exe - c tvhub - g btn_status
-    def TESTGetbtn_status(self):
+    #19.test_Getbtn_status# - tdebt.exe - c tvhub - g btn_status
+    def test_Getbtn_status(self):
         print "TESTGetbtn_status"
         cmdStr = tdebt + " -c tvhub -g btn_status"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -189,8 +191,8 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("0", r)
         return
 
-        # test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
-    def TESTSettvhub_led(self):
+    #20.test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
+    def test_Settvhub_led(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_spplib_bypass 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -198,15 +200,14 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-        # test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
-    def TESTSettvhub_led(self):
+    #21.test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
+    def test_Settvhub_led(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_spplib_bypass 0"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
         self.assertEqual("[OK]", r)
-        return
-
+        return        
     # DANGER Requires hard power cycle to recover.#tdebt.exe - c tvhub - s radiotxdata# tdebt.exe - c tvhub - s bt_uartdisable
 
 if __name__ == '__main__':

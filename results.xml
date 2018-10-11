@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite errors="11" failures="0" name="TDE_Modes-20181011161829" skipped="0" tests="11" time="0.000">
+	<testsuite errors="13" failures="0" name="TDE_Modes-20181011162959" skipped="0" tests="13" time="0.015">
 		<testcase classname="TDE_Modes" name="test_GetMacaddressBT" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
@@ -35,10 +35,27 @@ Stdout:
 test_GetTde_unique_id
 ]]>			</error>
 		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettvhub_ble_camera_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 125, in test_Gettvhub_ble_camera_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Gettvhub_ble_camera_address
+]]>			</error>
+		</testcase>
 		<testcase classname="TDE_Modes" name="test_Gettvhub_ble_central_address" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
-  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 106, in test_Gettvhub_ble_central_address
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 107, in test_Gettvhub_ble_central_address
     r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
   File "C:\Python27\lib\subprocess.py", line 530, in check_output
     process = Popen(stdout=PIPE, *popenargs, **kwargs)
@@ -120,6 +137,23 @@ Stdout:
 test_SetMacaddressBT 
 ]]>			</error>
 		</testcase>
+		<testcase classname="TDE_Modes" name="test_Settde_test_tracking_data" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 135, in test_Settde_test_tracking_data
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+TESTSettde_test_tracking_data
+]]>			</error>
+		</testcase>
 		<testcase classname="TDE_Modes" name="test_Settde_unique_id" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
@@ -140,7 +174,7 @@ test_Settde_unique_id
 		<testcase classname="TDE_Modes" name="test_Settvhub_ble_camera_address" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
-  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 115, in test_Settvhub_ble_camera_address
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 116, in test_Settvhub_ble_camera_address
     r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
   File "C:\Python27\lib\subprocess.py", line 530, in check_output
     process = Popen(stdout=PIPE, *popenargs, **kwargs)
@@ -154,7 +188,7 @@ Stdout:
 test_Settvhub_ble_camera_address
 ]]>			</error>
 		</testcase>
-		<testcase classname="TDE_Modes" name="test_Settvhub_ble_central_address" time="0.000">
+		<testcase classname="TDE_Modes" name="test_Settvhub_ble_central_address" time="0.015">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
   File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 97, in test_Settvhub_ble_central_address
@@ -191,11 +225,13 @@ test_Settvhub_ble_peripheral_address
 		<system-out>
 <![CDATA[test_GetMacaddressBT
 test_GetTde_unique_id
+test_Gettvhub_ble_camera_address
 test_Gettvhub_ble_central_address
 test_Gettvhub_ble_peripheral_address
 test_Gettvhub_cec_status
 test_Gettvhub_chrontel_status
 test_SetMacaddressBT 
+TESTSettde_test_tracking_data
 test_Settde_unique_id 
 test_Settvhub_ble_camera_address
 test_Settvhub_ble_central_address
