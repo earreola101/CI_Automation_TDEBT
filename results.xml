@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite errors="2" failures="0" name="TDE_Modes-20181011155515" skipped="0" tests="2" time="0.001">
-		<testcase classname="TDE_Modes" name="test_GetMacaddressBT" time="0.001">
+	<testsuite errors="11" failures="0" name="TDE_Modes-20181011161829" skipped="0" tests="11" time="0.000">
+		<testcase classname="TDE_Modes" name="test_GetMacaddressBT" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
-  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_01.py", line 32, in test_GetMacaddressBT
-    r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 30, in test_GetMacaddressBT
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
   File "C:\Python27\lib\subprocess.py", line 530, in check_output
     process = Popen(stdout=PIPE, *popenargs, **kwargs)
   File "C:\Python27\lib\subprocess.py", line 672, in __init__
@@ -15,14 +15,99 @@
 WindowsError: [Error 2] The system cannot find the file specified
 
 Stdout:
-TEST GetMacaddress
+test_GetMacaddressBT
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettde_unique_id" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 70, in test_Gettde_unique_id
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_GetTde_unique_id
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettvhub_ble_central_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 106, in test_Gettvhub_ble_central_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Gettvhub_ble_central_address
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettvhub_ble_peripheral_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 50, in test_Gettvhub_ble_peripheral_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Gettvhub_ble_peripheral_address
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettvhub_cec_status" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 79, in test_Gettvhub_cec_status
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Gettvhub_cec_status
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Gettvhub_chrontel_status" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 88, in test_Gettvhub_chrontel_status
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Gettvhub_chrontel_status
 ]]>			</error>
 		</testcase>
 		<testcase classname="TDE_Modes" name="test_SetMacaddressBT" time="0.000">
 			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
 <![CDATA[Traceback (most recent call last):
-  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_01.py", line 20, in test_SetMacaddressBT
-    r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 19, in test_SetMacaddressBT
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
   File "C:\Python27\lib\subprocess.py", line 530, in check_output
     process = Popen(stdout=PIPE, *popenargs, **kwargs)
   File "C:\Python27\lib\subprocess.py", line 672, in __init__
@@ -32,12 +117,89 @@ TEST GetMacaddress
 WindowsError: [Error 2] The system cannot find the file specified
 
 Stdout:
-TEST_tdebt_SetMacaddress 
+test_SetMacaddressBT 
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Settde_unique_id" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 59, in test_Settde_unique_id
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Settde_unique_id 
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Settvhub_ble_camera_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 115, in test_Settvhub_ble_camera_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Settvhub_ble_camera_address
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Settvhub_ble_central_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 97, in test_Settvhub_ble_central_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Settvhub_ble_central_address
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_Settvhub_ble_peripheral_address" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_02.py", line 39, in test_Settvhub_ble_peripheral_address
+    r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+test_Settvhub_ble_peripheral_address
 ]]>			</error>
 		</testcase>
 		<system-out>
-<![CDATA[TEST GetMacaddress
-TEST_tdebt_SetMacaddress 
+<![CDATA[test_GetMacaddressBT
+test_GetTde_unique_id
+test_Gettvhub_ble_central_address
+test_Gettvhub_ble_peripheral_address
+test_Gettvhub_cec_status
+test_Gettvhub_chrontel_status
+test_SetMacaddressBT 
+test_Settde_unique_id 
+test_Settvhub_ble_camera_address
+test_Settvhub_ble_central_address
+test_Settvhub_ble_peripheral_address
 ]]>		</system-out>
 		<system-err>
 <![CDATA[]]>		</system-err>
