@@ -1,5 +1,17 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+;//******************************************************************************************************************************
+;//  Copyright (c) 1999-2017 Logitech, Inc.  All Rights Reserved
+;//
+;//  This program is a trade secret of LOGITECH, and it is not to be reproduced,
+;//  published, disclosed to others, copied, adapted, distributed or displayed
+;//  without the prior authorization of LOGITECH.
+;//
+;//  Licensee agrees to attach or embbed this notice on all copies of the program,
+;//  including partial copies or modified versions thereof.
+;//
+;//  Description:
+;//
+;//  Created by Eduardo Arreola
+;//******************************************************************************************************************************
 import subprocess
 import sys
 import string
@@ -11,7 +23,7 @@ import xmlrunner
 from timeit import default_timer
 from time import sleep
 
-# automated TDE mode test version 0.1.0
+# Automated TDE mode test version 0.1.0
 
 tdebt = './tdebt.exe'
 
