@@ -23,8 +23,7 @@ class TDE_Modes(unittest.TestCase):
         print("OUTPUT: "+r+"\r\n")
         self.assertEqual("[OK]",r)
         return
-
-        
+		
     #test_GetMacaddressBT
     def test_GetMacaddressBT(self):
         print("TEST GetMacaddress")
@@ -33,104 +32,60 @@ class TDE_Modes(unittest.TestCase):
         print("OUTPUT: "+r+"\r\n")
         self.assertEqual("111234567899",r)
         return
-		
-	    #test_SetMacaddressCentral
-    def test_SetMacaddressCentral(self):
-        print("TEST SetMacaddressCentral ")
-        cmdStr=tdebt+" -s macaddress_central 001122334455"
+   
+
+    #tdebt.exe -c tvhub -g fwversion
+    def test_Getfwversion(self):
+        print("test_Getfwversion")
+        cmdStr=tdebt+" -c tvhub -g fwversion "
         r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        r = r.replace("\r\n", " ")
-        r = r.replace(" ", " ")
         print("OUTPUT: "+r+"\r\n")
-        self.assertEqual(" MacAddressCentral=001122334455[OK]",r)
+        self.assertEqual("111234567899",r)
         return
-        
-        
-    #test_GetMacaddressCentral
-    def test_GetMacaddressCentral(self):
-        print("TEST GetMacaddressCentral")
-        cmdStr=tdebt+" -g macaddress_central "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("001122334455",r)
-        return        
- 
-    #test_Setmacaddress_peripheral
-    def test_SetMacaddressPeripheral(self):
-        print("TEST SetMacaddressPeripheral ")
-        cmdStr=tdebt+" -s macaddress_peripheral 001122334455"
+		
+
+    #tdebt.exe -c tvhub -s tde_unique_id 1111222233334444
+    def test_SetTde_unique_id(self):
+        print("test_SetTde_unique_id ")
+        cmdStr=tdebt+" -c tvhub -s tde_unique_id 1111222233334444"
         r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
         r = r.replace("\r\n", " ")
         r = r.replace(" ", " ")
         print("OUTPUT: "+r+"\r\n")
-        self.assertEqual(" MacAddress_Peripheral=001122334455[OK]",r)
+        self.assertEqual("[OK]",r)
+        return		
+		
+    #tdebt.exe -c tvhub -s serialnumber 111111111222222222
+    def test_Setserialnumber(self):
+        print("test_Setserialnumber ")
+        cmdStr=tdebt+" -c tvhub -s serialnumber 111111111222222222"
+        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+        r = r.replace("\r\n", " ")
+        r = r.replace(" ", " ")
+        print("OUTPUT: "+r+"\r\n")
+        self.assertEqual("[OK]",r)
+        return	
+		
+		
+		
+    #tdebt.exe -c tvhub -g tvhub_valens_status
+    def test_Gettvhub_valens_status(self):
+        print("test_tvhub_valens_status")
+        cmdStr=tdebt+" -c tvhub -g tvhub_valens_status"
+        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+        print("OUTPUT: "+r+"\r\n")
+        self.assertEqual("111234567899",r)
+        return		
+
+    #tdebt.exe -c tvhub -g tvhub_ble_status
+    def test_GetTvhub_ble_status(self):
+        print("test_GetTvhub_ble_status")
+        cmdStr=tdebt+" -c tvhub -g tvhub_ble_status"
+        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+        print("OUTPUT: "+r+"\r\n")
+        self.assertEqual("111234567899",r)
         return
 
-    #test_GetDeviceName
-    def test_GetDeviceName(self):
-        print("Start test_GetDeviceName")
-        cmdStr=tdebt+" -g devicename"
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("Logitech MeetUp Speakerphone",r)
-        return
-        
-    #test_GetDeviceNameBLE
-    def test_GetDeviceNameBLE(self):
-        print("Start test_GetDeviceNameBLE")
-        cmdStr=tdebt+" -g devicenameble "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("NB-LRUIW7",r)
-        return
-        
-        
-     #test_GetFWVersion
-    def test_GetFWVersion(self):
-        print("Start test_test_GetFWVersion")
-        cmdStr=tdebt+" -g fwversion "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("255",r)
-        return
- 
-     #test_GetHWVersion
-    def test_GetFWVersion(self):
-        print("Start test_GetFWVersion")
-        cmdStr=tdebt+" -g hwversion "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("0",r)
-        return 
- 
-     #test_GetSerialnumber
-    def test_GetFWVersion(self):
-        print("Start test_GetSerialnumber")
-        cmdStr=tdebt+" -g serialnumber "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("30783035653638323830000000",r)
-        return
-        
-      #test_Getbtusbpidvid
-    def test_Getbtusbpidvid(self):
-        print("Start test_Getbtusbpidvid")
-        cmdStr=tdebt+" -g btusbpidvid "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("[M]:VID=0x46d, PID=0x867",r)
-        return       
- 
-      #test_Getbt_nfcstatus
-    def test_Getbt_nfcstatus(self):
-        print("Start test_Getbt_nfcstatus")
-        cmdStr=tdebt+" -g bt_nfcstatus "
-        r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
-        print("OUTPUT: "+r+"\r\n")
-        self.assertEqual("0",r)
-        return     
-       	
-        
 if __name__ == '__main__':
     with open('results.xml', 'wb') as output:
         unittest.main(
