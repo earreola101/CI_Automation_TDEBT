@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite errors="2" failures="0" name="TDE_Modes-20181011155515" skipped="0" tests="2" time="0.001">
+		<testcase classname="TDE_Modes" name="test_GetMacaddressBT" time="0.001">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_01.py", line 32, in test_GetMacaddressBT
+    r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+TEST GetMacaddress
+]]>			</error>
+		</testcase>
+		<testcase classname="TDE_Modes" name="test_SetMacaddressBT" time="0.000">
+			<error message="[Error 2] The system cannot find the file specified" type="WindowsError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Automation_CI_TDEBT\CI_Automation_TDEBT\tdebt_utest_01.py", line 20, in test_SetMacaddressBT
+    r=subprocess.check_output(cmdStr,stderr=subprocess.STDOUT)
+  File "C:\Python27\lib\subprocess.py", line 530, in check_output
+    process = Popen(stdout=PIPE, *popenargs, **kwargs)
+  File "C:\Python27\lib\subprocess.py", line 672, in __init__
+    errread, errwrite)
+  File "C:\Python27\lib\subprocess.py", line 882, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+Stdout:
+TEST_tdebt_SetMacaddress 
+]]>			</error>
+		</testcase>
+		<system-out>
+<![CDATA[TEST GetMacaddress
+TEST_tdebt_SetMacaddress 
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testsuite>
+</testsuites>

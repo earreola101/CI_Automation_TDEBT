@@ -6,9 +6,7 @@ import unittest
 import xmlrunner
 from timeit import default_timer
 from time import sleep
-
 # Automated TDE mode test version 0.1 .0
-
 tdebt = './tdebt.exe'
 
 class TDE_Modes(unittest.TestCase):
