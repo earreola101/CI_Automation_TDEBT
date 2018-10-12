@@ -137,7 +137,7 @@ class TDE_Modes(unittest.TestCase):
         self.assertEqual("[OK]", r)
         return
 
-#14.test_Gettvhub_tde_test_tracking_data# - tdebt.exe - c tvhub - g tde_test_tracking_data
+    #14.test_Gettvhub_tde_test_tracking_data# - tdebt.exe - c tvhub - g tde_test_tracking_data
     def TESTGettvhub_tde_test_tracking_data(self):
         print "TESTGettvhub_tde_test_tracking_data"
         cmdStr = tdebt + " -c tvhub -g tde_test_tracking_data"
@@ -165,16 +165,16 @@ class TDE_Modes(unittest.TestCase):
         return
 
     #17.test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 0
-    def test_Settvhub_led(self):
+    def test_Settvhub_led0(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_led 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
         self.assertEqual("[OK]", r)
-        return
+        return  
 
     #18.test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 1
-    def test_Settvhub_led(self):
+    def test_Settvhub_led1(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_led 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -192,7 +192,7 @@ class TDE_Modes(unittest.TestCase):
         return
 
     #20.test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
-    def test_Settvhub_led(self):
+    def test_Settvhub_spplib_bypass1(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_spplib_bypass 1"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
@@ -201,7 +201,7 @@ class TDE_Modes(unittest.TestCase):
         return
 
     #21.test_Settvhub_spplib_bypass# - tdebt.exe - c tvhub - s tvhub_spplib_bypass 1(bypass)
-    def test_Settvhub_led(self):
+    def test_Settvhub_spplib_bypass2(self):
         print "TESTSettvhub_led"
         cmdStr = tdebt + " -c tvhub -s tvhub_spplib_bypass 0"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
