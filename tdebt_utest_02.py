@@ -40,7 +40,7 @@ class TDE_Modes(unittest.TestCase):
         r = r.replace("\r\n", " ")
         r = r.replace(" ", " ")
         print "OUTPUT: " + r + "\r\n"
-        self.assertEqual("[OK]", r)
+        self.assertEqual("4467e23d4686[OK]", r)
         return
 
     #4. test_Gettvhub_ble_peripheral_address# - tdebt.exe - c tvhub - g tvhub_ble_peripheral_address
@@ -96,7 +96,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + " -c tvhub -s tvhub_ble_central_address 4467e23d4686"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
-        self.assertEqual("[OK]", r)
+        self.assertEqual("4467e23d4686[OK]", r)
         return
 
         
@@ -106,7 +106,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + " -c tvhub -g tvhub_ble_central_address"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
-        self.assertEqual("0", r)
+        self.assertEqual("001122334455", r)
         return
 
     #11.test_Settvhub_ble_camera_address# - tdebt.exe - c tvhub - s tvhub_ble_camera_address eedd55e83755
@@ -115,7 +115,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + " -c tvhub -s tvhub_ble_camera_address eedd55e83755"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
-        self.assertEqual("[OK]", r)
+        self.assertEqual("eedd55e83755", r)
         return
 
     #12.test_Gettvhub_ble_camera_address# - tdebt.exe - c tvhub - g tvhub_ble_camera_address
@@ -161,7 +161,7 @@ class TDE_Modes(unittest.TestCase):
         cmdStr = tdebt + " -c tvhub -g pskey"
         r = subprocess.check_output(cmdStr, stderr = subprocess.STDOUT)
         print "OUTPUT: " + r + "\r\n"
-        self.assertEqual("0", r)
+        self.assertEqual("29", r)
         return
 
     #17.test_Settvhub_led# - tdebt.exe - c tvhub - s tvhub_led 0
